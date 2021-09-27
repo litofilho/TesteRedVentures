@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Front End Test - Greenthumb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.scss" />
+    
+  </head>
+  
+  <body">
+    <script src="script.js" type="text/javascript"></script>
+    <section class="header" id="top">
+      <div class="bg">
+        <img class="leftLeaves pc" src="images/hero/desktop/left-leaves.png" />
+        <img class="plantperson pc" src="images/hero/desktop/plantperson.png" />
+        <img class="rightLeaves pc" src="images/hero/desktop/right-leaves.png" />
+        <img class="topLeaves mb" src="images/hero/mobile/mobile-leaves.png" />
+        <img class="plantperson mb" src="images/hero/mobile/mobile-plantperson.png" />
+      </div>
+      <div class="container">
+        <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+        <h1>Find your next green friend</h1>
+        <img
+          class="arrowDown"
+          src="images/icons/arrow-down.svg"
+          alt="ArrowDown"
+        />
+      </div>
+    </section>
+    <section class="filters">
+      <div class="container">
+        <div class="filter">
+          <img src="images/illustrations/sun.png" />
+          <p>
+            <strong>1.</strong> Set the amount of <strong>sunlight</strong> your
+            plant will get.
+          </p>
+          <select name="sun">
+            <option value="" disabled selected>Select...</option>
+            <option value="no">No</option>
+            <option value="low">Low</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+
+        <div class="filter">
+          <img src="images/illustrations/wateringcan.png" />
+          <p>
+            <strong>2.</strong> How often do you want to
+            <strong>water</strong> your plant?
+          </p>
+          <select name="water">
+            <option value="" disabled selected>Select...</option>
+            <option value="rarely">Rarely</option>
+            <option value="daily">Daily </option>
+            <option value="regularly">Regularly</option>
+          </select>
+        </div>
+
+        <div class="filter">
+          <img src="images/illustrations/dog.png" />
+          <p>
+            <strong>3.</strong> Do you have pets? Do they
+            <strong>chew</strong> plants?
+          </p>
+          <select name="pet">
+            <option value="" disabled selected>Select...</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="results">
+      <div class="container">
+        <div class="noResults">
+          <div>
+            <h2>No results yet…</h2>
+            <h4>
+              Use the filters above to find the plant that best fits your
+              environment :)
+            </h4>
+          </div>
+          <img src="images/illustrations/no-results.png" />
+        </div>
+        <div class="plants hide">
+            <div class="top">
+              <img src="images/illustrations/pick.png" />
+              <h2>Our picks for you</h2>
+            </div>
+            <div class="items">
+            </div>
+            <a href="#top" class="toTop"><img src="images/icons/arrow-up.svg" /> back to the top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
